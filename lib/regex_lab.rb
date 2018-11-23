@@ -14,9 +14,7 @@ text.scan(/\bun\w+ing\b/)
 end
 
 def words_five_letters_long(text)
-text = ["afoot", "Excellent", "incredible", "Absolute", "unreal", "Inconceivable", "octopus"]
-
-text.grep(/^\w{5}\s/)
+text.scan(/\b\w{5}\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
